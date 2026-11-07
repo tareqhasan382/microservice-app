@@ -1,0 +1,120 @@
+/* ============================================================
+   Nova — design tokens
+   Nordic Cool Light · cool neutrals · refined indigo · editorial serif
+   A single source of truth for color, type, space and motion.
+   ============================================================ */
+
+:root {
+  color-scheme: light;
+
+  /* --- Type families ------------------------------------ */
+  --font-display: 'Fraunces', 'Iowan Old Style', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Instrument Sans', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+
+  /* --- Cool neutral scale (lightest → darkest) ---------- */
+  --n-0: #ffffff;
+  --n-25: #fbfcfe;
+  --n-50: #f6f8fc;
+  --n-100: #eef2f8;
+  --n-200: #e3e9f3;
+  --n-300: #d3dbe8;
+  --n-400: #a9b4c6;
+  --n-500: #7b8698;
+  --n-600: #59657a;
+  --n-700: #3c4658;
+  --n-800: #28303f;
+  --n-900: #161c28;
+  --n-950: #0c111b;
+
+  /* --- Ink (dark chrome & product mock) ----------------- */
+  --ink-1000: #0a0e17;
+  --ink-950: #0f141f;
+  --ink-900: #151b28;
+  --ink-850: #1a2130;
+  --ink-800: #212a3b;
+  --ink-700: #2c3749;
+  --ink-600: #3b4658;
+
+  /* --- Text --------------------------------------------- */
+  --text-strong: #101725;
+  --text: #37425a;
+  --text-muted: #5d6a80;
+  --text-faint: #8b96a9;
+
+  /* --- Brand (refined indigo) --------------------------- */
+  --brand-50: #eef0fd;
+  --brand-100: #e2e6fb;
+  --brand-200: #cdd2f8;
+  --brand-300: #a3abef;
+  --brand-400: #6b76e0;
+  --brand-500: #4b57d2;
+  --brand-600: #3d48b8;
+  --brand-700: #333ca6;
+  --brand-glow: rgba(75, 87, 210, 0.28);
+  --brand-soft: rgba(75, 87, 210, 0.09);
+
+  /* --- Accents ------------------------------------------ */
+  --aqua-400: #2fb3aa;
+  --aqua-500: #12968f;
+  --aqua-soft: rgba(18, 150, 143, 0.1);
+  --amber-400: #d9a132;
+  --amber-500: #bf861b;
+  --amber-soft: rgba(191, 134, 27, 0.12);
+  --rose-400: #e0657a;
+  --rose-500: #cf3a52;
+  --rose-soft: rgba(207, 58, 82, 0.1);
+  --green-400: #3da06c;
+  --green-500: #2f8b59;
+  --green-soft: rgba(47, 139, 89, 0.11);
+
+  /* --- Surfaces ----------------------------------------- */
+  --bg: #f3f6fb;
+  --surface-1: #ffffff;
+  --surface-2: #f4f7fb;
+  --surface-3: #eaeff7;
+  --surface-sunken: #edf1f8;
+
+  --border-soft: rgba(16, 23, 37, 0.07);
+  --border: rgba(16, 23, 37, 0.11);
+  --border-strong: rgba(16, 23, 37, 0.19);
+
+  /* --- Gradients ---------------------------------------- */
+  --grad-brand: linear-gradient(135deg, #4b57d2 0%, #6b76e0 58%, #2fb3aa 132%);
+  --grad-panel: linear-gradient(180deg, #ffffff 0%, #fbfcfe 100%);
+  --grad-text: linear-gradient(115deg, #141b29 0%, #4b57d2 62%, #12968f 112%);
+  --grad-canvas:
+    radial-gradient(1120px 680px at 88% -14%, rgba(75, 87, 210, 0.1), transparent 60%),
+    radial-gradient(920px 620px at 4% 2%, rgba(18, 150, 143, 0.08), transparent 58%);
+
+  /* --- Radius ------------------------------------------- */
+  --r-xs: 8px;
+  --r-sm: 10px;
+  --r-md: 14px;
+  --r-lg: 20px;
+  --r-xl: 26px;
+  --r-pill: 999px;
+
+  /* --- Shadows ------------------------------------------ */
+  --shadow-sm: 0 1px 2px rgba(16, 24, 40, 0.06);
+  --shadow-md: 0 12px 30px -14px rgba(16, 24, 40, 0.18);
+  --shadow-lg: 0 34px 70px -34px rgba(16, 24, 40, 0.3);
+  --shadow-glow: 0 18px 38px -18px var(--brand-glow);
+
+  /* --- Layout ------------------------------------------- */
+  --sidebar-w: 264px;
+  --topbar-h: 68px;
+  --content-max: 1180px;
+
+  /* --- Motion ------------------------------------------- */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 140ms;
+  --dur: 220ms;
+  --dur-slow: 420ms;
+
+  /* --- Z-index ------------------------------------------ */
+  --z-topbar: 20;
+  --z-modal: 60;
+  --z-toast: 80;
+}
